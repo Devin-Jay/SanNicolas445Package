@@ -1,0 +1,15 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r}
+library(SanNicolas445Package)
+library(ggplot2)
+
+ggplot(Flagstaff_Weather, aes(x = DATE, y = TMAX)) +
+  geom_line() +
+  labs(title = "Daily Maximum Temperature in Flagstaff",
+       x = "Date", y = "TMAX")
+```
+
